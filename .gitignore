@@ -210,3 +210,5 @@ logs/
 yolov5/
 data/
 class_mappings/
+yolov8x.pt
+yolov8l.pt
