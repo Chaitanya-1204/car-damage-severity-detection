@@ -12,7 +12,7 @@ os.chdir("yolov5")
 command = (
     "python -m torch.distributed.run --nproc_per_node=2 --master_port=12345 train.py "
     "--img 640 "
-    "--batch 64 "
+    "--batch 32 "
     "--epochs 200 "
     "--data ../data/data.yaml "
     "--weights yolov5x.pt "
@@ -35,7 +35,7 @@ os.system(command)
 command = (
     "python -m torch.distributed.run --nproc_per_node=2 --master_port=12345 train.py "
     "--img 640 "
-    "--batch 64 "
+    "--batch 32 "
     "--epochs 200 "
    "--data ../data/data.yaml "
     "--weights yolov5x.pt "
